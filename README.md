@@ -39,12 +39,14 @@ Pterodactyl面板地址：https://ctrl.lunes.host/
 	    
 4. GitHub Actions 初始手动执行检查是否有配置错误，脚本会自动每10天执行一次,可手动执行
 
-### 注意事项
-1. 确保 Lunes 账户密码正确
-2. 首次运行 GitHub Actions 需要授权
-3. 脚本执行时间为 UTC 10:00（中国时间）
-4. 如果不需要 Telegram 通知，可不配置相关环境变量
+###🎯 低触发率优化策略总结
 
+- 每账号随机延迟启动 10~60 秒
+- 每次登录随机 User-Agent
+- Playwright stealth 模式（隐藏 webdriver）
+- 每账号失败自动重试 2 次
+- Cookie 优先，减少 Cloudflare 触发
+- 截图 + Telegram 异常通知
 
 ### 许可证
 GPL 3.0
