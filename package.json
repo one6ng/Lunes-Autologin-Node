@@ -1,12 +1,8 @@
 {
-  "name": "keepalive-netlib",
+  "name": "lunes-auto-login",
   "version": "1.0.0",
-  "main": "login.js",
-  "scripts": {
-    "start": "node login.js"
-  },
   "dependencies": {
-    "axios": "latest",
-    "playwright": "latest"
+    "axios": "^1.6.0",
+    "puppeteer": "^22.0.0"
   }
 }
