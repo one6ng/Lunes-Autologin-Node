@@ -8,6 +8,18 @@ Pterodactyl面板地址：https://ctrl.lunes.host/
 - 👥 支持账户自动处理
 - ⏰ 每10天自动执行一次
 - 📱 执行结果可通过 Telegram 通知
+- 
+###🔥 核心升级功能
+1、多账号登录 ✅
+2、Cookie 优先 + 持久化 ✅
+3、Cloudflare 检测 + 低触发率策略 ✅
+      随机延迟 10~60 秒启动
+      随机 User-Agent
+      Playwright stealth 模式
+4、服务器信息校验 ✅（SERVER_ID / SERVER_UUID / NODE_HOST）
+5、截图 + Telegram 异常通知 ✅
+6、自动重试 ✅（每账号最多 2 次）
+7、GitHub Actions 免费版适用 ✅
 
 ### 使用方法
 1. fork 此项目
