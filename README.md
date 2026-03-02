@@ -3,32 +3,35 @@
 
 Pterodactyl面板地址：https://ctrl.lunes.host/
 
-
-
 ### 功能特点
-- 🔐 自动登录 Netlib 账户(单账户或多账户)
-- 👥 支持多账户批量处理
-- ⏰ 每60天自动执行一次
+- 🔐 自动登录 Lnues 账户(单账户或多账户)
+- 👥 支持账户自动处理
+- ⏰ 每10天自动执行一次
 - 📱 执行结果可通过 Telegram 通知
 
 ### 使用方法
 1. fork 此项目
 2. 在Actions菜单允许 `I understand my workflows, go ahead and enable them` 按钮
 
-3. 在 GitHub 仓库的 Settings → Secrets and variables → Actions 中添加以下环境变量
--  账号密码之间用英文冒号分隔，账号与账号之间英文逗号分隔
-- `ACCOUNTS`  Netlib账户(必填)，格式(单账号)：user:pass   格式(多账号)：user1:pass1,user2:pass2 
+3. ### 配置参数说明
 
-- telegram为可选环境变量,不需要通知可不填写
-- `BOT_TOKEN` 	Telegram机器人Token https://t.me/BotFather 创建bot后获取
-- `CHAT_ID`     Telegram 聊天ID https://t.me/laowang_serv00_bot 发送 /start 获取
+| 参数 | 说明 | 必填 | 默认值 |
+|------|------|------|--------|
+| `PANEL_URL` | Pterodactyl面板地址 | ✅ | 点击manage后进入控制台的域名：https://ctrl.lunes.host/ |
+| `SERVER_ID` | 服务器ID | ✅ | 控制台页面url的path里面可以取到：https://ctrl.lunes.host/server/server_id |
+| `SERVER_UUID` | 服务器UUID | ✅ | 进入控制台页面点击setting然后看左下角长的那个就是uuid |
+| `NODE_HOST` | 节点主机名 | ✅ | 点击network里面的hostname就是 |
+| `LUNES_USERNAME` | 登录用户名 | ✅ | - |
+| `LUNES_PASSWORD` | 登录密码 | ✅ | - |
+| `BOT_TOKEN` | 机器人TOKEN | ✅ | TG机器密钥 |
+| `CHAT_ID` | 通知群组ID | ✅ | TG群组ID |
 	    
-4. GitHub Actions 初始手动执行检查是否有配置错误，脚本会自动每60天执行一次,可手动执行
+4. GitHub Actions 初始手动执行检查是否有配置错误，脚本会自动每10天执行一次,可手动执行
 
 ### 注意事项
-1. 确保 Netlib 账户密码正确
+1. 确保 Lunes 账户密码正确
 2. 首次运行 GitHub Actions 需要授权
-3. 脚本执行时间为 UTC 0:00（香港时间 8:00）
+3. 脚本执行时间为 UTC 10:00（中国时间）
 4. 如果不需要 Telegram 通知，可不配置相关环境变量
 
 
