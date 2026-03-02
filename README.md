@@ -14,9 +14,6 @@ Pterodactyl面板地址：https://ctrl.lunes.host/
 - 多账号登录 ✅
 - Cookie 优先 + 持久化 ✅
 - Cloudflare 检测 + 低触发率策略 ✅
-     .随机延迟 10~60 秒启动
-     .随机 User-Agent
-     .Playwright stealth 模式
 - 服务器信息校验 ✅（SERVER_ID / SERVER_UUID / NODE_HOST）
 - 截图 + Telegram 异常通知 ✅
 - 自动重试 ✅（每账号最多 2 次）
