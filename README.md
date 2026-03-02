@@ -9,7 +9,7 @@ Pterodactyl面板地址：https://ctrl.lunes.host/
 - ⏰ 每10天自动执行一次
 - 📱 执行结果可通过 Telegram 通知
 - 
-###🔥 核心升级功能
+🔥### 核心升级功能
 
 - 多账号登录 ✅
 - Cookie 优先 + 持久化 ✅
@@ -39,7 +39,7 @@ Pterodactyl面板地址：https://ctrl.lunes.host/
 	    
 4. GitHub Actions 初始手动执行检查是否有配置错误，脚本会自动每10天执行一次,可手动执行
 
-###🎯 低触发率优化策略总结
+🎯### 低触发率优化策略总结
 
 - 每账号随机延迟启动 10~60 秒
 - 每次登录随机 User-Agent
